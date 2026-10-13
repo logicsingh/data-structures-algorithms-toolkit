@@ -1,65 +1,55 @@
 # Data Structures and Algorithms Toolkit
 
-A beginner-friendly Python command-line project demonstrating classic searching and sorting algorithms and common data structures. Implementations are written for learning and testing, not as replacements for Python's optimized built-in tools.
+A beginner-friendly Python command-line project demonstrating searching algorithms, sorting algorithms, and fundamental data structures.
 
 ## Features
-- Linear search and binary search
-- Bubble, selection, insertion, and merge sort
-- Stack operations (LIFO) and queue operations (FIFO)
-- Singly linked list: append, prepend, find, delete
-- Binary search tree: insert, search, inorder/preorder/postorder traversals
-- Input validation in the CLI
-- Automated tests with Python's built-in `unittest`
+
+### Searching Algorithms
+- Linear Search — O(n)
+- Binary Search — O(log n), requires sorted input
+
+### Sorting Algorithms
+- Bubble Sort — O(n²)
+- Selection Sort — O(n²)
+- Insertion Sort — O(n²)
+- Merge Sort — O(n log n)
+
+### Data Structures
+- Stack: Push, pop, peek, and view (LIFO)
+- Queue: Enqueue, dequeue, front, and view (FIFO)
+- Singly Linked List: Append, prepend, find, and delete
+- Binary Search Tree: Insert, search, and tree traversals
+
+### Other Features
+- Interactive command-line menu
+- Modular Python code
+- Automated tests using `unittest`
 - No third-party dependencies
 
+## Application Screenshots
+
+### Sorting Algorithms
+![Sorting algorithms](screenshots/sorting-algorithms.png)
+
+### Stack Operations
+![Stack operations](screenshots/stack-operations.png)
+
+### Binary Search Tree
+![Binary search tree](screenshots/binary-search-tree.png)
+
+## Technologies Used
+- Python
+- Python Standard Library
+- unittest
+- Git and GitHub
+
 ## Requirements
-Python 3.10 or newer recommended. Works on Windows, macOS, and Linux.
+- Python 3.10 or newer recommended
 
-## Run
-From the project root:
+## Getting Started
+
+Clone the repository:
+
 ```bash
-py main.py
-```
-If `py` is unavailable, use `python main.py` or `python3 main.py`.
-
-## Test
-```bash
-py -m unittest discover -s tests -v
-```
-
-## Project structure
-```text
-data-structures-algorithms-toolkit/
-├── main.py
-├── dsa_toolkit/
-│   ├── searching.py
-│   ├── sorting.py
-│   ├── stack.py
-│   ├── queue.py
-│   ├── linked_list.py
-│   └── binary_search_tree.py
-├── tests/
-└── screenshots/
-```
-
-## Complexity overview
-| Algorithm / operation | Typical time | Notes |
-|---|---:|---|
-| Linear search | O(n) | Works on unsorted lists |
-| Binary search | O(log n) | Requires ascending-sorted input |
-| Bubble sort | O(n²) worst | Early exit on already sorted input |
-| Selection sort | O(n²) | Repeatedly selects smallest remaining value |
-| Insertion sort | O(n²) worst | O(n) best case for sorted input |
-| Merge sort | O(n log n) | O(n) extra space |
-| Stack push/pop | O(1) | List-backed |
-| Queue enqueue/dequeue | O(1) | Uses `collections.deque` |
-| Linked list search/delete | O(n) | Traverses nodes |
-| BST search/insert | O(log n) average, O(n) worst | Not self-balancing |
-
-## Learning outcomes
-Practice iteration, recursion, algorithm analysis, LIFO/FIFO behavior, linked nodes, tree traversal, and unit testing.
-
-## Limitations and extensions
-This is a command-line learning project. The binary search tree is not self-balancing. Possible extensions include a Tkinter visualizer, heaps, hash tables, graph traversal, and benchmark comparisons.
-
-Commit work as you actually implement and test it; do not backdate Git history or claim a historical college submission that did not occur.
+git clone https://github.com/logicsingh/data-structures-algorithms-toolkit.git
+cd data-structures-algorithms-toolkit
