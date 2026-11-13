@@ -1,55 +1,81 @@
 # Data Structures and Algorithms Toolkit
 
-A beginner-friendly Python command-line project demonstrating searching algorithms, sorting algorithms, and fundamental data structures.
+A Python command-line program for trying out common searching and sorting algorithms and a few core data structures. The menu lets you run operations and see the results without needing any third-party packages.
 
-## Features
+## What's included
 
-### Searching Algorithms
-- Linear Search — O(n)
-- Binary Search — O(log n), requires sorted input
+### Searching
+- Linear search — O(n)
+- Binary search — O(log n); input must be sorted
 
-### Sorting Algorithms
-- Bubble Sort — O(n²)
-- Selection Sort — O(n²)
-- Insertion Sort — O(n²)
-- Merge Sort — O(n log n)
+### Sorting
+- Bubble sort — O(n²)
+- Selection sort — O(n²)
+- Insertion sort — O(n²)
+- Merge sort — O(n log n)
 
-### Data Structures
-- Stack: Push, pop, peek, and view (LIFO)
-- Queue: Enqueue, dequeue, front, and view (FIFO)
-- Singly Linked List: Append, prepend, find, and delete
-- Binary Search Tree: Insert, search, and tree traversals
-
-### Other Features
-- Interactive command-line menu
-- Modular Python code
-- Automated tests using `unittest`
-- No third-party dependencies
-
-## Application Screenshots
-
-### Sorting Algorithms
-![Sorting algorithms](screenshots/sorting-algorithms.png)
-
-### Stack Operations
-![Stack operations](screenshots/stack-operations.png)
-
-### Binary Search Tree
-![Binary search tree](screenshots/binary-search-tree.png)
-
-## Technologies Used
-- Python
-- Python Standard Library
-- unittest
-- Git and GitHub
+### Data structures
+- Stack — push, pop, peek and display
+- Queue — enqueue, dequeue, front and display
+- Singly linked list — append, prepend, find and delete
+- Binary search tree — insert, search and traversals
 
 ## Requirements
+
 - Python 3.10 or newer recommended
+- No external packages required
 
-## Getting Started
+## Run it
 
-Clone the repository:
+Clone the repository and move into the project directory:
 
 ```bash
 git clone https://github.com/logicsingh/data-structures-algorithms-toolkit.git
 cd data-structures-algorithms-toolkit
+python main.py
+```
+
+If your system uses `python3`, run `python3 main.py`.
+
+## Run the tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests cover the searching and sorting functions, linked-list operations, stack and queue behaviour, and binary-search-tree operations.
+
+## Project layout
+
+```text
+data-structures-algorithms-toolkit/
+├── dsa_toolkit/
+│   ├── binary_search_tree.py
+│   ├── linked_list.py
+│   ├── queue.py
+│   ├── searching.py
+│   ├── sorting.py
+│   └── stack.py
+├── tests/
+├── screenshots/
+└── main.py
+```
+
+## Screenshots
+
+### Sorting algorithms
+![Sorting algorithms](screenshots/sorting-algorithms.png)
+
+### Stack operations
+![Stack operations](screenshots/stack-operations.png)
+
+### Binary search tree
+![Binary search tree](screenshots/binary-search-tree.png)
+
+## Notes
+
+This is a small learning project, so the implementations are intended to make the underlying operations easy to read and compare. For example, binary search only works correctly when the input is sorted. The time complexities above describe the usual algorithmic running time; actual performance depends on the input size and implementation.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
